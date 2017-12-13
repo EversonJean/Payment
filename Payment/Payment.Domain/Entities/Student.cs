@@ -1,4 +1,5 @@
-﻿using Payment.Domain.ValueObjects;
+﻿using Flunt.Validations;
+using Payment.Domain.ValueObjects;
 using Payment.Shared.Entities;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +9,13 @@ namespace Payment.Domain.Entities
     public class Student : Entity
     {
         private IList<Subscription> _subscriptions;
+
+        /// <summary>
+        /// As notificações(exceptions) obtitas dos ValuesObjects são agrupadas nas notificações desta Entidade
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="document"></param>
+        /// <param name="email"></param>
         public Student(Name name, Document document, Email email)
         {
             Name = name;
@@ -27,11 +35,21 @@ namespace Payment.Domain.Entities
 
         public void AddSubscription(Subscription subscription)
         {
-            //Cancela as outras e adiciona esta como principal
+            var hasSubscriptionActive = false;
             foreach (var sub in Subscriptions)
-                sub.Inactivate();
+            {
+                if (sub.Active)
+                    hasSubscriptionActive = true;
+            }
 
-            _subscriptions.Add(subscription);
+            //AddNotifications(new Contract()
+            //    .Requires()
+            //    .IsFalse(hasSubscriptionActive, "Student.Subscriptions", "Você já tem uma assinatura ativa")
+            //    );
+
+            //Alternativa
+            if (hasSubscriptionActive)
+                AddNotification("Student.Subscriptions", "Você já tem uma assinatura ativa");
         }
     }
 }
