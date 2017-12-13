@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Payment.Shared.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Payment.Domain.Entities
 {
-    public class Subscription
+    public class Subscription : Entity
     {
         private IList<Payment> _payment;
         public Subscription(DateTime? expireDate)

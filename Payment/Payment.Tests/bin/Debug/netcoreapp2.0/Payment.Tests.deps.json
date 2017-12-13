@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "26c571fc509fadccac280abad117b03277e95ced"
+    "signature": "fe985e53ab8c2f7a6ea72c4aa407168f415af0f1"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,10 +10,24 @@
         "dependencies": {
           "MSTest.TestAdapter": "1.1.18",
           "MSTest.TestFramework": "1.1.18",
-          "Microsoft.NET.Test.Sdk": "15.3.0"
+          "Microsoft.NET.Test.Sdk": "15.3.0",
+          "Payment.Domain": "1.0.0"
         },
         "runtime": {
           "Payment.Tests.dll": {}
+        }
+      },
+      "Flunt/1.0.2": {
+        "runtime": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        }
+      },
+      "Flunt.Br/1.0.0": {
+        "dependencies": {
+          "Flunt": "1.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flunt.Br.dll": {}
         }
       },
       "Microsoft.CSharp/4.0.1": {
@@ -988,6 +1002,23 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
+      },
+      "Payment.Domain/1.0.0": {
+        "dependencies": {
+          "Flunt.Br": "1.0.0",
+          "Payment.Shared": "1.0.0"
+        },
+        "runtime": {
+          "Payment.Domain.dll": {}
+        }
+      },
+      "Payment.Shared/1.0.0": {
+        "dependencies": {
+          "Flunt.Br": "1.0.0"
+        },
+        "runtime": {
+          "Payment.Shared.dll": {}
+        }
       }
     }
   },
@@ -996,6 +1027,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Flunt/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HtQBErf6cJewdP7LzLJEyehePdPKP4ieYoQP8DpiXB6qs1TeuHVF38Bw8TZzz9t7r2j+SWFRoMsU5oJvzSOeBg==",
+      "path": "flunt/1.0.2",
+      "hashPath": "flunt.1.0.2.nupkg.sha512"
+    },
+    "Flunt.Br/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OQABBOsGWpU8rKC17MvzzOu8AAOI6hQo8o8R3Ef0pK8QecfC/P7/COipgjwg2seUXUa4EfvpRKgcVCP6OMHXwg==",
+      "path": "flunt.br/1.0.0",
+      "hashPath": "flunt.br.1.0.0.nupkg.sha512"
     },
     "Microsoft.CSharp/4.0.1": {
       "type": "package",
@@ -1486,6 +1531,16 @@
       "sha512": "sha512-Zm2BdeanuncYs3NhCj4c9e1x3EXFzFBVv2wPEc/Dj4ZbI9R8ecLSR5frAsx4zJCPBtKQreQ7Q/KxJEohJZbfzA==",
       "path": "system.xml.xpath.xmldocument/4.0.1",
       "hashPath": "system.xml.xpath.xmldocument.4.0.1.nupkg.sha512"
+    },
+    "Payment.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Payment.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

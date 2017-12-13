@@ -1,20 +1,37 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "signature": "167fc9e0c3a47cad2c5fe1da12c4deb60a5eb2e4"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "Payment.Domain/1.0.0": {
         "dependencies": {
+          "Flunt.Br": "1.0.0",
           "Payment.Shared": "1.0.0"
         },
         "runtime": {
           "Payment.Domain.dll": {}
         }
       },
+      "Flunt/1.0.2": {
+        "runtime": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        }
+      },
+      "Flunt.Br/1.0.0": {
+        "dependencies": {
+          "Flunt": "1.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flunt.Br.dll": {}
+        }
+      },
       "Payment.Shared/1.0.0": {
+        "dependencies": {
+          "Flunt.Br": "1.0.0"
+        },
         "runtime": {
           "Payment.Shared.dll": {}
         }
@@ -26,6 +43,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Flunt/1.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HtQBErf6cJewdP7LzLJEyehePdPKP4ieYoQP8DpiXB6qs1TeuHVF38Bw8TZzz9t7r2j+SWFRoMsU5oJvzSOeBg==",
+      "path": "flunt/1.0.2",
+      "hashPath": "flunt.1.0.2.nupkg.sha512"
+    },
+    "Flunt.Br/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OQABBOsGWpU8rKC17MvzzOu8AAOI6hQo8o8R3Ef0pK8QecfC/P7/COipgjwg2seUXUa4EfvpRKgcVCP6OMHXwg==",
+      "path": "flunt.br/1.0.0",
+      "hashPath": "flunt.br.1.0.0.nupkg.sha512"
     },
     "Payment.Shared/1.0.0": {
       "type": "project",

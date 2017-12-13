@@ -2,6 +2,31 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Flunt/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        }
+      },
+      "Flunt.Br/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Flunt": "1.0.2",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Flunt.Br.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flunt.Br.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -200,6 +225,26 @@
     }
   },
   "libraries": {
+    "Flunt/1.0.2": {
+      "sha512": "HtQBErf6cJewdP7LzLJEyehePdPKP4ieYoQP8DpiXB6qs1TeuHVF38Bw8TZzz9t7r2j+SWFRoMsU5oJvzSOeBg==",
+      "type": "package",
+      "path": "flunt/1.0.2",
+      "files": [
+        "flunt.1.0.2.nupkg.sha512",
+        "flunt.nuspec",
+        "lib/netstandard1.3/Flunt.dll"
+      ]
+    },
+    "Flunt.Br/1.0.0": {
+      "sha512": "OQABBOsGWpU8rKC17MvzzOu8AAOI6hQo8o8R3Ef0pK8QecfC/P7/COipgjwg2seUXUa4EfvpRKgcVCP6OMHXwg==",
+      "type": "package",
+      "path": "flunt.br/1.0.0",
+      "files": [
+        "flunt.br.1.0.0.nupkg.sha512",
+        "flunt.br.nuspec",
+        "lib/netstandard1.3/Flunt.Br.dll"
+      ]
+    },
     "Microsoft.NETCore.App/2.0.0": {
       "sha512": "/mzXF+UtZef+VpzzN88EpvFq5U6z4rj54ZMq/J968H6pcvyLOmcupmTRpJ3CJm8ILoCGh9WI7qpDdiKtuzswrQ==",
       "type": "package",
@@ -660,6 +705,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Flunt.Br >= 1.0.0",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
@@ -710,6 +756,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Flunt.Br": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",

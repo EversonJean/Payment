@@ -1,6 +1,8 @@
-﻿namespace Payment.Shared.ValueObjects
+﻿using Flunt.Notifications;
+
+namespace Payment.Shared.ValueObjects
 {
-    public class ValueObject
+    public class ValueObject : Notifiable
     {
     }
 }

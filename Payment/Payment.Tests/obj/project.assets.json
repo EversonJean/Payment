@@ -2,6 +2,31 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Flunt/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flunt.dll": {}
+        }
+      },
+      "Flunt.Br/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Flunt": "1.0.2",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Flunt.Br.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Flunt.Br.dll": {}
+        }
+      },
       "Microsoft.CSharp/4.0.1": {
         "type": "package",
         "dependencies": {
@@ -1605,6 +1630,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
         "dependencies": {
+          "Flunt.Br": "1.0.0",
           "Payment.Shared": "1.0.0"
         },
         "compile": {
@@ -1617,6 +1643,9 @@
       "Payment.Shared/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Flunt.Br": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Payment.Shared.dll": {}
         },
@@ -1627,6 +1656,26 @@
     }
   },
   "libraries": {
+    "Flunt/1.0.2": {
+      "sha512": "HtQBErf6cJewdP7LzLJEyehePdPKP4ieYoQP8DpiXB6qs1TeuHVF38Bw8TZzz9t7r2j+SWFRoMsU5oJvzSOeBg==",
+      "type": "package",
+      "path": "flunt/1.0.2",
+      "files": [
+        "flunt.1.0.2.nupkg.sha512",
+        "flunt.nuspec",
+        "lib/netstandard1.3/Flunt.dll"
+      ]
+    },
+    "Flunt.Br/1.0.0": {
+      "sha512": "OQABBOsGWpU8rKC17MvzzOu8AAOI6hQo8o8R3Ef0pK8QecfC/P7/COipgjwg2seUXUa4EfvpRKgcVCP6OMHXwg==",
+      "type": "package",
+      "path": "flunt.br/1.0.0",
+      "files": [
+        "flunt.br.1.0.0.nupkg.sha512",
+        "flunt.br.nuspec",
+        "lib/netstandard1.3/Flunt.Br.dll"
+      ]
+    },
     "Microsoft.CSharp/4.0.1": {
       "sha512": "17h8b5mXa87XYKrrVqdgZ38JefSUqLChUQpXgSnpzsM0nDOhE40FTeNWOJ/YmySGV6tG6T8+hjz6vxbknHJr6A==",
       "type": "package",
@@ -5647,6 +5696,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "Flunt.Br >= 1.0.0",
       "MSTest.TestAdapter >= 1.1.18",
       "MSTest.TestFramework >= 1.1.18",
       "Microsoft.NET.Test.Sdk >= 15.3.0",
@@ -5705,6 +5755,10 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Flunt.Br": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
           "MSTest.TestAdapter": {
             "target": "Package",
             "version": "[1.1.18, )"
