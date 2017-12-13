@@ -11,7 +11,7 @@ namespace Payment.Tests.Entities
         [TestMethod]
         public void Test()
         {
-            var student = new Student("Everson", "Jean", "12345678912", "everson@io.com");    
+          //  var student = new Student("Everson", "Jean", "12345678912", "everson@io.com");    
 
         }
     }

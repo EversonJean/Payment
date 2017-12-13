@@ -1604,11 +1604,24 @@
       "Payment.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "Payment.Shared": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Payment.Domain.dll": {}
         },
         "runtime": {
           "bin/placeholder/Payment.Domain.dll": {}
+        }
+      },
+      "Payment.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Payment.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Shared.dll": {}
         }
       }
     }
@@ -5625,6 +5638,11 @@
       "type": "project",
       "path": "../Payment.Domain/Payment.Domain.csproj",
       "msbuildProject": "../Payment.Domain/Payment.Domain.csproj"
+    },
+    "Payment.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Payment.Shared/Payment.Shared.csproj",
+      "msbuildProject": "../Payment.Shared/Payment.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5638,6 +5656,7 @@
   },
   "packageFolders": {
     "C:\\Users\\Everson\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -5646,18 +5665,20 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Everson\\source\\repos\\Payment\\Payment.Tests\\Payment.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Tests\\Payment.Tests.csproj",
       "projectName": "Payment.Tests",
-      "projectPath": "C:\\Users\\Everson\\source\\repos\\Payment\\Payment.Tests\\Payment.Tests.csproj",
+      "projectPath": "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Tests\\Payment.Tests.csproj",
       "packagesPath": "C:\\Users\\Everson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Everson\\source\\repos\\Payment\\Payment.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Everson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -5669,8 +5690,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "C:\\Users\\Everson\\source\\repos\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
-              "projectPath": "C:\\Users\\Everson\\source\\repos\\Payment\\Payment.Domain\\Payment.Domain.csproj"
+            "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Domain\\Payment.Domain.csproj": {
+              "projectPath": "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Domain\\Payment.Domain.csproj"
             }
           }
         }
@@ -5684,22 +5705,22 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
-          "MSTest.TestFramework": {
-            "target": "Package",
-            "version": "1.1.18"
-          },
           "MSTest.TestAdapter": {
             "target": "Package",
-            "version": "1.1.18"
+            "version": "[1.1.18, )"
           },
-          "Microsoft.NETCore.App": {
+          "MSTest.TestFramework": {
             "target": "Package",
-            "version": "2.0",
-            "autoReferenced": true
+            "version": "[1.1.18, )"
           },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
-            "version": "15.3.0"
+            "version": "[15.3.0, )"
+          },
+          "Microsoft.NETCore.App": {
+            "target": "Package",
+            "version": "[2.0.0, )",
+            "autoReferenced": true
           }
         },
         "imports": [

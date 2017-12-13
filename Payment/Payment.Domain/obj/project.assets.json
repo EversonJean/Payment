@@ -196,6 +196,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Payment.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Payment.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payment.Shared.dll": {}
+        }
       }
     }
   },
@@ -656,15 +666,22 @@
         "netstandard.library.2.0.0.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Payment.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Payment.Shared/Payment.Shared.csproj",
+      "msbuildProject": "../Payment.Shared/Payment.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "Payment.Shared >= 1.0.0"
     ]
   },
   "packageFolders": {
     "C:\\Users\\Everson\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -673,18 +690,20 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\Everson\\source\\repos\\Payment\\Payment.Domain\\Payment.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Domain\\Payment.Domain.csproj",
       "projectName": "Payment.Domain",
-      "projectPath": "C:\\Users\\Everson\\source\\repos\\Payment\\Payment.Domain\\Payment.Domain.csproj",
+      "projectPath": "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Domain\\Payment.Domain.csproj",
       "packagesPath": "C:\\Users\\Everson\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Everson\\source\\repos\\Payment\\Payment.Domain\\obj\\",
+      "outputPath": "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\Everson\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -695,7 +714,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Shared\\Payment.Shared.csproj": {
+              "projectPath": "C:\\Users\\Everson\\Documents\\Git Repositories\\Payment\\Payment\\Payment.Shared\\Payment.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -710,7 +733,7 @@
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
           }
         },
