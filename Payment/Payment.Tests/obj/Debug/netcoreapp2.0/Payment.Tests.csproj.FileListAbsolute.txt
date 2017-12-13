@@ -1,0 +1,14 @@
+C:\Users\Everson\source\repos\Payment\Payment.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Everson\source\repos\Payment\Payment.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Everson\source\repos\Payment\Payment.Tests\bin\Debug\netcoreapp2.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Everson\source\repos\Payment\Payment.Tests\bin\Debug\netcoreapp2.0\Payment.Tests.deps.json
+C:\Users\Everson\source\repos\Payment\Payment.Tests\bin\Debug\netcoreapp2.0\Payment.Tests.runtimeconfig.json
+C:\Users\Everson\source\repos\Payment\Payment.Tests\bin\Debug\netcoreapp2.0\Payment.Tests.runtimeconfig.dev.json
+C:\Users\Everson\source\repos\Payment\Payment.Tests\bin\Debug\netcoreapp2.0\Payment.Tests.dll
+C:\Users\Everson\source\repos\Payment\Payment.Tests\bin\Debug\netcoreapp2.0\Payment.Tests.pdb
+C:\Users\Everson\source\repos\Payment\Payment.Tests\obj\Debug\netcoreapp2.0\Payment.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Everson\source\repos\Payment\Payment.Tests\obj\Debug\netcoreapp2.0\Payment.Tests.csproj.CoreCompileInputs.cache
+C:\Users\Everson\source\repos\Payment\Payment.Tests\obj\Debug\netcoreapp2.0\Payment.Tests.AssemblyInfoInputs.cache
+C:\Users\Everson\source\repos\Payment\Payment.Tests\obj\Debug\netcoreapp2.0\Payment.Tests.AssemblyInfo.cs
+C:\Users\Everson\source\repos\Payment\Payment.Tests\obj\Debug\netcoreapp2.0\Payment.Tests.dll
+C:\Users\Everson\source\repos\Payment\Payment.Tests\obj\Debug\netcoreapp2.0\Payment.Tests.pdb

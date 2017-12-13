@@ -1,0 +1,9 @@
+C:\Users\Everson\source\repos\Payment\Payment.Domain\bin\Debug\netcoreapp2.0\Payment.Domain.deps.json
+C:\Users\Everson\source\repos\Payment\Payment.Domain\bin\Debug\netcoreapp2.0\Payment.Domain.dll
+C:\Users\Everson\source\repos\Payment\Payment.Domain\bin\Debug\netcoreapp2.0\Payment.Domain.pdb
+C:\Users\Everson\source\repos\Payment\Payment.Domain\obj\Debug\netcoreapp2.0\Payment.Domain.csprojResolveAssemblyReference.cache
+C:\Users\Everson\source\repos\Payment\Payment.Domain\obj\Debug\netcoreapp2.0\Payment.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Everson\source\repos\Payment\Payment.Domain\obj\Debug\netcoreapp2.0\Payment.Domain.AssemblyInfoInputs.cache
+C:\Users\Everson\source\repos\Payment\Payment.Domain\obj\Debug\netcoreapp2.0\Payment.Domain.AssemblyInfo.cs
+C:\Users\Everson\source\repos\Payment\Payment.Domain\obj\Debug\netcoreapp2.0\Payment.Domain.dll
+C:\Users\Everson\source\repos\Payment\Payment.Domain\obj\Debug\netcoreapp2.0\Payment.Domain.pdb
