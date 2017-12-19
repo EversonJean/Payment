@@ -20,7 +20,7 @@ namespace Payment.Domain.ValueObjects
                 .HasMinLen(FirstName, 2, "Name.FirstName", "O Nome deve conter no mínimo 2 caracteres")
                 .HasMinLen(LastName, 2, "Name.LastName", "O Sobrenome deve conter no mínimo 2 caracteres")
                 .HasMaxLen(FirstName, 50, "Name.FirstName", "O Nome deve conter no máximo 50 caracteres")
-                .HasMaxLen(LastName, 2, "Name.LastName", "O Sobrenome deve conter no máximo 50 caracteres")
+                .HasMaxLen(LastName, 50, "Name.LastName", "O Sobrenome deve conter no máximo 50 caracteres")
                 );
         }
 
