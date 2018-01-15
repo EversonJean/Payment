@@ -52,10 +52,11 @@ namespace Payment.Domain.Entities
             if (hasSubscriptionActive)
                 AddNotification("Student.Subscriptions", "Você já tem uma assinatura ativa");
 
-            if (subscription.Payments.Count == 0)
-            {
+            if (subscription.Payments.Count == 0)            
                 AddNotification("Student.Subscription.Payments", "Essa assinatura não contem pagamentos");
-            }
+
+            if(this.Valid)
+                _subscriptions.Add(subscription);
 
         }
     }
