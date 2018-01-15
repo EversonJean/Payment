@@ -12,4 +12,8 @@
     <ProjectReference Include="..\Payment.Shared\Payment.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\Command\" />
+  </ItemGroup>
+
 </Project>

@@ -1,7 +1,7 @@
 ﻿using Flunt.Notifications;
 using Flunt.Validations;
 using Payment.Domain.Enums;
-using Payment.Domain.Interfaces.Command;
+using Payment.Shared.Commands;
 using System;
 
 namespace Payment.Domain.Commands
@@ -48,7 +48,7 @@ namespace Payment.Domain.Commands
 
         public string ZipCode { get; set; }
 
-        public void Validate()
+        public bool Validate()
         {
             AddNotifications(new Contract()
                .Requires()
@@ -57,6 +57,9 @@ namespace Payment.Domain.Commands
                .HasMaxLen(FirstName, 50, "Name.FirstName", "O Nome deve conter no máximo 50 caracteres")
                .HasMaxLen(LastName, 50, "Name.LastName", "O Sobrenome deve conter no máximo 50 caracteres")
                );
+
+            return this.Valid;
+
         }
     }
 }
